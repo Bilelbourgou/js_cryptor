@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crypteur</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        #app {
+            width: 100%;
+            max-width: 100%;
+        }
+        #app p {
+            text-align: center;
+            width: 99%;
+            height: 40px;
+            background-color: rgb(38, 114, 255);
+            color: wheat;
+            padding: 3px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            border-radius: 10px ;
+            margin: 5px;
+
+        }
+        #app select {
+            width: 99%;
+            height: 40px;
+            padding: 5px;
+            margin: 5px;
+            border: solid rgb(38, 114, 255) 2px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        textarea{
+            width: 99%;
+            height: 200px;
+            margin: 3px;
+            padding: 2px;
+            border: solid rgb(38, 114, 255) 2px;
+            border-radius: 10px;
+            font-size: 20px;  
+            outline: none;
+            resize: none;
+        }
+    </style>
+    <div id="app">
+        <p>Text-النص</p>
+        <select id="select">
+            <option value="coder">Crypter un text</option>
+            <option value="decoder">Décrypter un text</option> 
+        </select>
+        <textarea id="text"> </textarea>
+        <p>Result-النتيجة</p>
+        <textarea id="result"></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
